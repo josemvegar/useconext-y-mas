@@ -3,7 +3,7 @@ import { PruebaContext } from '../context/PruebaContext';
 
 export const Login = () => {
 
-    const {usuario, setUsuario} = useContext(PruebaContext); 
+    const {setUsuario} = useContext(PruebaContext); 
 
     const guardarDatos = e => {
       e.preventDefault();

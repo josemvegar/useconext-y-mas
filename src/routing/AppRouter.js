@@ -31,21 +31,22 @@ export const AppRouter = () => {
                         <NavLink to="/contacto">Contacto</NavLink>
                     </li>
                     
-                        {usuario.hasOwnProperty("username") && usuario.username !== null ? (
-                        <>
-                            <li>
-                                <NavLink to="/">{usuario.username}</NavLink> 
-                            </li>
-                            <li>
-                            <a href="#" onClick={e => {
-                                e.preventDefault();
-                                setUsuario({});
-                            }}>Cerrar Sesión</a> 
-                            </li>
-                        </>) : 
-                        (<li>
-                            <NavLink to="/login">Login</NavLink>
-                        </li>)}
+                    {usuario.hasOwnProperty("username") && usuario.username !== null ? (
+                    <>
+                        <li>
+                            <NavLink to="/">{usuario.username}</NavLink> 
+                        </li>
+                        <li>
+                        <button href="#"  onClick={e => {
+                            e.preventDefault();
+                            setUsuario({});
+                        }}>Cerrar Sesión</button> 
+                        </li>
+                    </>) : 
+                    (<li>
+                        <NavLink to="/login">Login</NavLink>
+                    </li>)}
+
                     <li>
                         
                     </li>

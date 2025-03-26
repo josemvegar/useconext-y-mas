@@ -3,7 +3,7 @@ import { PruebaContext } from '../context/PruebaContext';
 
 export const Contacto = () => {
 
-  const {usuario, setUsuario} = useContext(PruebaContext); 
+  const {usuario} = useContext(PruebaContext); 
 
   return (
     <div>
