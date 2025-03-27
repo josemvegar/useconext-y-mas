@@ -2,6 +2,7 @@ import './App.css';
 import React, { useContext, useState, useEffect } from 'react'
 import { PruebaContext } from './context/PruebaContext';
 import { AppRouter } from './routing/AppRouter';
+import { MiComponente } from './components/MiComponente';
 
 function App() {
 
@@ -33,6 +34,11 @@ function App() {
       }}>
         <AppRouter></AppRouter>
       </PruebaContext.Provider>
+
+      <hr/>
+      <hr/>
+      <h1>Hook useID</h1>
+      <MiComponente></MiComponente>
       
     </div>
   );
