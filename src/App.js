@@ -1,8 +1,9 @@
 import './App.css';
-import React, { useContext, useState, useEffect } from 'react'
+import React, {useState, useEffect } from 'react'
 import { PruebaContext } from './context/PruebaContext';
 import { AppRouter } from './routing/AppRouter';
 import { MiComponente } from './components/MiComponente';
+import { PruebasCustomHook } from './components/PruebasCustomHook';
 
 function App() {
 
@@ -39,7 +40,11 @@ function App() {
       <hr/>
       <h1>Hook useID</h1>
       <MiComponente></MiComponente>
-      
+
+      <hr/>
+      <hr/>
+      <h1>Custom Hook's</h1>
+      <PruebasCustomHook></PruebasCustomHook>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useId } from 'react'
 
 export const MiComponente = () => {
 
-  const id= null;
+  //const id= null;
 
   return (
     <div className='content'>
