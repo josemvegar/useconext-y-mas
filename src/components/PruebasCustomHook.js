@@ -1,6 +1,7 @@
 import React from 'react'
 import { useMayus } from '../hooks/useMayus'
 import { MiFormulario } from './MiFormulario';
+import { MiUsuario } from './MiUsuario';
 
 export const PruebasCustomHook = () => {
 
@@ -17,7 +18,10 @@ export const PruebasCustomHook = () => {
         <button onClick={ e => {concatenar("123.")}}>Concatenar</button><br/><br/>
 
         <h2>2) Formulario para agregar cursos</h2>
-        <MiFormulario></MiFormulario>
+        <MiFormulario></MiFormulario><br/><br/>
+
+        <h2>3) Peticiones asincronas (Usuario)</h2>
+        <MiUsuario> </MiUsuario>
 
     </div>
   )

@@ -68,10 +68,11 @@ body{
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  width: 300px;
 }
 
 .mi-formulario input, .mi-formulario textarea{
-  width: 300px;
+  max-width: 300px;
   height: 30px;
   padding: 5px;
 }
@@ -85,4 +86,14 @@ button, .mi-formulario input[type="submit"]{
 
 button{
   margin-top: 5px;
+}
+
+.codigo{
+  font-size: 12px;
+}
+
+.enviado{
+  background-color: green;
+  color: white;
+  padding: 5px;
 }
